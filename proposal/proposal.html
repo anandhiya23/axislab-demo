@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<title>Proposal Website — Axis Lab</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #111;
+    font-size: 10.5px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+
+  /* Header */
+  .head {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    border-bottom: 2px solid #111; padding-bottom: 14px; margin-bottom: 20px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand .word { letter-spacing: .26em; font-weight: 600; font-size: 15px; }
+  .brand .sub { letter-spacing: .18em; font-size: 7px; color: #777; margin-top: 3px; }
+  .meta { text-align: right; font-size: 8.5px; color: #555; line-height: 1.7; }
+  .meta strong { color: #111; }
+
+  h1 { font-size: 19px; font-weight: 700; letter-spacing: -.01em; margin-bottom: 4px; }
+  .lead { color: #555; font-size: 10px; margin-bottom: 22px; max-width: 560px; }
+
+  .sec { margin-bottom: 18px; break-inside: avoid; }
+  .sec h2 {
+    font-size: 8px; letter-spacing: .18em; text-transform: uppercase;
+    color: #999; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .sec h2 .n {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 15px; height: 15px; border-radius: 50%; background: #111; color: #fff;
+    font-size: 8px; letter-spacing: 0;
+  }
+  .sec h3 { font-size: 12px; font-weight: 700; margin-bottom: 6px; }
+  p { margin-bottom: 6px; }
+  .muted { color: #666; }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 4px; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e4e4e4; vertical-align: top; }
+  th { font-size: 8px; letter-spacing: .1em; text-transform: uppercase; color: #999; font-weight: 700; }
+  td.r, th.r { text-align: right; white-space: nowrap; }
+
+  ul { list-style: none; margin: 4px 0; }
+  ul li { position: relative; padding-left: 14px; margin-bottom: 3px; }
+  ul li::before { content: "—"; position: absolute; left: 0; color: #999; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .box { border: 1px solid #ddd; border-radius: 6px; padding: 12px 14px; }
+  .box .price { font-size: 17px; font-weight: 700; margin: 2px 0 6px; }
+  .box .tag { font-size: 8px; letter-spacing: .12em; text-transform: uppercase; color: #999; font-weight: 700; }
+
+  .flow {
+    display: flex; align-items: center; gap: 8px; margin: 8px 0; flex-wrap: wrap;
+    font-size: 9px;
+  }
+  .node { border: 1px solid #111; border-radius: 5px; padding: 7px 10px; text-align: center; }
+  .node.dark { background: #111; color: #fff; }
+  .node small { display: block; color: #888; font-size: 7.5px; letter-spacing: .05em; }
+  .node.dark small { color: #bbb; }
+  .arrow { color: #999; font-size: 12px; }
+  .stack { display: flex; flex-direction: column; gap: 5px; }
+
+  .callout { background: #f4f4f1; border-radius: 6px; padding: 10px 12px; font-size: 9.5px; }
+  .ok { color: #111; font-weight: 700; }
+
+  .foot { border-top: 1px solid #ddd; margin-top: 18px; padding-top: 10px; font-size: 8px; color: #777; display: flex; justify-content: space-between; }
+  a { color: #111; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 100 100">
+        <g stroke="#111" stroke-width="2.6" stroke-linecap="round">
+          <line x1="50" y1="50" x2="2" y2="47"/>
+          <line x1="50" y1="50" x2="23" y2="15"/>
+          <line x1="50" y1="50" x2="62" y2="10"/>
+          <line x1="50" y1="50" x2="84" y2="29"/>
+          <line x1="50" y1="50" x2="95" y2="58"/>
+          <line x1="50" y1="50" x2="41" y2="87"/>
+        </g>
+      </svg>
+      <div>
+        <div class="word">AXIS LAB</div>
+        <div class="sub">FITNESS &amp; PILATES</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div><strong>Proposal Pengembangan Website</strong></div>
+      <div>Disiapkan oleh: <strong>Bintang Anandhiya</strong></div>
+      <div>bintanganandhiya23@gmail.com</div>
+      <div>2 Juli 2026</div>
+    </div>
+  </div>
+
+  <h1>Website &amp; Sistem Booking — Axis Lab</h1>
+  <p class="lead">
+    Website berbasis foto dengan tema hitam-putih sesuai brand identity Axis Lab,
+    lengkap dengan sistem booking terintegrasi (website + WhatsApp), konfirmasi
+    email otomatis, dan pengecekan status booking. Prototipe fungsional sudah
+    dibangun dan dapat dicoba langsung.
+  </p>
+
+  <!-- 1. TIMELINE -->
+  <div class="sec">
+    <h2><span class="n">1</span> Estimasi Timeline Pengerjaan</h2>
+    <p class="muted">Total <strong>4–6 minggu</strong> setelah aset (foto &amp; konten) siap. Sebagian besar sistem inti sudah terbangun sebagai prototipe.</p>
+    <table>
+      <tr><th>Fase</th><th>Aktivitas</th><th class="r">Durasi</th></tr>
+      <tr><td>1 · Persiapan</td><td>Pengumpulan foto, konten, registrasi domain &amp; email</td><td class="r">±1 minggu</td></tr>
+      <tr><td>2 · Desain &amp; Halaman</td><td>Penyesuaian brand, foto, dan konten pada halaman (basis prototipe sudah ada)</td><td class="r">1.5–2 minggu</td></tr>
+      <tr><td>3 · Sistem Booking</td><td>Finalisasi database, konfirmasi email, order management, integrasi WhatsApp</td><td class="r">±1 minggu</td></tr>
+      <tr><td>4 · Testing &amp; Go-Live</td><td>QA, revisi, deploy, pemasangan domain &amp; email</td><td class="r">±1 minggu</td></tr>
+    </table>
+  </div>
+
+  <!-- 2. QUOTATION -->
+  <div class="sec">
+    <h2><span class="n">2</span> Preliminary Quotation</h2>
+    <div class="grid2">
+      <div class="box">
+        <div class="tag">Biaya pembuatan · sekali bayar</div>
+        <div class="price">Rp 8.000.000</div>
+        <ul>
+          <li>Landing page berbasis foto (tema hitam-putih, sesuai brand deck)</li>
+          <li>Sistem booking online (form → database)</li>
+          <li>Integrasi WhatsApp CS ke sistem yang sama</li>
+          <li>Konfirmasi email otomatis + Booking ID</li>
+          <li>Halaman cek status booking</li>
+          <li>Dashboard order management</li>
+          <li>Responsive (HP &amp; desktop), SEO dasar, deploy</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="tag">Berulang · per tahun</div>
+        <div class="price">Rp 2.000.000<span style="font-size:9px;font-weight:400;color:#888">/tahun</span></div>
+        <ul>
+          <li>Domain (.id) + perpanjangan tahunan</li>
+          <li>Hosting (Vercel)</li>
+          <li>Maintenance &amp; pembaruan minor</li>
+          <li>Monitoring &amp; dukungan teknis</li>
+        </ul>
+        <p class="muted" style="font-size:8.5px;margin-top:6px">Di luar paket (opsional): payment gateway, fitur akun/login customer, penambahan halaman besar — sebagai pengembangan lanjutan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. DOMAIN & EMAIL -->
+  <div class="sec">
+    <h2><span class="n">3</span> Rekomendasi Domain &amp; Email Bisnis</h2>
+    <div class="grid2">
+      <div>
+        <h3>Domain</h3>
+        <ul>
+          <li><span class="ok">axislab.id</span> — tersedia. Rekomendasi utama (kuat untuk brand Indonesia).</li>
+          <li><span class="ok">axislab.fit</span> — tersedia. Alternatif relevan wellness (+Rp 300rb/tahun).</li>
+          <li>axislab.com — sudah terdaftar pihak lain (tidak tersedia).</li>
+        </ul>
+        <p class="muted" style="font-size:8.5px">Biaya domain sudah termasuk dalam paket berulang Rp 2jt/tahun (kecuali .fit +Rp 300rb).</p>
+      </div>
+      <div>
+        <h3>Email bisnis (Google Workspace)</h3>
+        <p>Email dengan domain sendiri, contoh <strong>info@axislab.id</strong> dan <strong>booking@axislab.id</strong>, terintegrasi penuh dengan Gmail, Calendar, dan Drive.</p>
+        <p class="muted">Biaya ±Rp 100.000/pengguna/bulan, <strong>ditagih langsung oleh Google</strong> (di luar paket). Rekomendasi mulai 1–2 akun. Setup DNS (MX) kami bantu kerjakan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. BOOKING FLOW -->
+  <div class="sec">
+    <h2><span class="n">4</span> Alur Booking Terintegrasi (Website + WhatsApp)</h2>
+    <p class="muted">Semua booking — dari website maupun Customer Service WhatsApp — masuk ke <strong>satu database yang sama</strong>. Tidak ada data yang terpisah.</p>
+    <div class="flow">
+      <div class="stack">
+        <div class="node">Customer via Website<small>form booking</small></div>
+        <div class="node">Customer via WhatsApp<small>diinput CS</small></div>
+      </div>
+      <span class="arrow">→</span>
+      <div class="node dark">Database / Order Management<small>satu sumber data</small></div>
+      <span class="arrow">→</span>
+      <div class="node">Dashboard Admin<small>lihat, filter, ubah status</small></div>
+    </div>
+    <p class="muted" style="font-size:8.5px">Admin dapat melihat seluruh booking, memfilter status (pending / confirmed / selesai / batal), dan menambah booking manual dari CS.</p>
+  </div>
+
+  <!-- 5. CONFIRMATION & STATUS -->
+  <div class="sec">
+    <h2><span class="n">5</span> Konfirmasi Otomatis &amp; Cek Status Booking</h2>
+    <div class="grid2">
+      <div class="callout">
+        <strong>Konfirmasi email otomatis</strong> ✓ tersedia<br>
+        <span class="muted">Setelah booking, customer menerima email berisi detail sesi dan <strong>Booking ID</strong> (contoh: AXL-7QK2P9).</span>
+      </div>
+      <div class="callout">
+        <strong>Cek status via website</strong> ✓ tersedia<br>
+        <span class="muted">Customer memasukkan Booking ID di halaman cek status — tanpa perlu akun. Opsi login/akun tersedia sebagai pengembangan lanjutan.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Bintang Anandhiya · bintanganandhiya23@gmail.com</span>
+    <span>Prototipe fungsional tersedia untuk demo · Axis Lab</span>
+  </div>
+
+</div>
+</body>
+</html>
